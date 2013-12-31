@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "Hello."
+date:   2013-12-30 12:05:22
+blurb:  "This is a new electronic computer writing system!"
+categories: new
+---
+
+I've created a computer writing system that manages to cut costs while increasing savings!
+
+{% highlight python %}
+  reduce(costs)
+  celebrate(profit)
+{% endhighlight %}
+
+Check out the [full proof](http://donnayoung.org/math/math-paper.htm#paper).
