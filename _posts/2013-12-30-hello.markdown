@@ -1,16 +1,13 @@
 ---
 layout: post
 title:  "Hello."
-date:   2013-12-30 12:05:22
-blurb:  "This is a new electronic computer writing system!"
-categories: new
+date:   2013-12-31 12:05:22
+blurb:  "Forget the database. Let's try GitHub Pages."
+categories: blog
 ---
 
-I've created a computer writing system that manages to cut costs while increasing savings!
+After writing in a beefy Django-powered app and perpetually losing my database I decided to try out [GitHub Pages](http://pages.github.com/) and [Jekyll](http://jekyllrb.com/). 
 
-{% highlight python %}
-  reduce(costs)
-  celebrate(profit)
-{% endhighlight %}
+Jekyll uses the [Liquid](http://liquidmarkup.org/) templating library, which feels familiar coming from Django. In a nutshell, you layout your HTML/CSS/Liquid pages and provide content in markdown files. Jekyll then completes all possible renderings in a single build process, whereas Django renders each page for each request (before caching). That comes at the cost of dynamism: e.g There's no great way to search this thing (besides loading the whole contents into memory and searching with Javascript). BUT THERE'S NO DATABASE, and now the main possible attack is breaking ssh+git instead of my weakly guarded django admin portal.
 
-Check out the [full proof](http://donnayoung.org/math/math-paper.htm#paper).
+Oh, and [SGit for Android](https://play.google.com/store/apps/details?id=me.sheimi.sgit) is a *pretty* full-featured Git client that lets me push posts from my phone! (Currently trying to figure out how to make the ssh clone feature work. Though https + user auth works for now). A quick search doesn't turn up any push-capable iOS clients but [objective-git](https://github.com/libgit2/objective-git) suggests it's possible.

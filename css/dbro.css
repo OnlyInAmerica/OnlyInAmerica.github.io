@@ -10,6 +10,10 @@ div.card {
   border-radius: 2px;
   }
 
+  div.card p{
+    line-height: 1.5em;
+  }
+
   div.card p.url {
     border-top: 1px solid #e5e5e5;
     background-image: url('http://www.eriklindemann.com/wp-content/uploads/2013/05/url.png');
@@ -70,6 +74,24 @@ a:hover{
 .header{
   margin-top:15px;
 }
+
+.arrow{
+  font-size: 1.2em;
+}
+
+.icon{
+  padding-right:5px;
+}
+
+p.url {
+    border-top: 1px solid #e5e5e5;
+    background-image: url('http://www.eriklindemann.com/wp-content/uploads/2013/05/url.png');
+    background-repeat: no-repeat;
+    padding: 6px 0 0 30px;
+    height: 30px;
+    display: block;
+    margin-bottom: -10px;
+  }
 
 /*****************************************************************************/
 /*
