@@ -80,7 +80,7 @@ And in my post template I add the following:
 	<div id="photosphere" style="height:480px"></div>
 	<script>
 	window.onload = function() {
-		new Photosphere("/img/{{page.photosphere}}").loadPhotosphere(document.getElementById("photosphere"));
+		new Photosphere("/img/{{ "{{page.photosphere" }}}}").loadPhotosphere(document.getElementById("photosphere"));
 	};
 	</script>
 {{ "{% endif " }}%}
