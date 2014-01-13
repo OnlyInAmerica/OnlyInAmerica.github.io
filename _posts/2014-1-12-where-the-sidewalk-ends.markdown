@@ -64,7 +64,7 @@ Here's this post's Front Matter:
 layout: post
 title:  "Free the Photosphere"
 date:   2014-1-4 22:20:22
-blurb:  "Fully spherical panorams are neat."
+blurb:  "Fully spherical panoramas are neat."
 categories: blog
 extra_js:
   - three.min.js
