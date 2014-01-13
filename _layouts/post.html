@@ -7,6 +7,14 @@ layout: default
 		<div class="card">
 			<h1><a href="{{ post.url }}">{{ page.title }}</a></h1>
 			<p>{{ page.blurb }}</p>
+			{% if page.photosphere %}
+				<div id="photosphere" style="height:480px"></div>
+				<script>
+				window.onload = function() {
+					new Photosphere("/img/{{page.photosphere}}").loadPhotosphere(document.getElementById("photosphere"));
+				};
+				</script>
+			{% endif %}
 			<div style="border-top: 1px solid #e5e5e5;"></div>
 			<p class="post">{{ content }}</p>
 			<p>{{ page.date | date_to_string }}</p>
